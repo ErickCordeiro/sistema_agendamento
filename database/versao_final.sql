@@ -40,10 +40,6 @@ CREATE TABLE IF NOT EXISTS `branchs` (
 
 -- Copiando dados para a tabela consultorio.branchs: ~0 rows (aproximadamente)
 DELETE FROM `branchs`;
-/*!40000 ALTER TABLE `branchs` DISABLE KEYS */;
-INSERT INTO `branchs` (`id`, `company`, `fantasy`, `document`, `ie`, `street`, `number`, `complement`, `neight`, `city`, `uf`, `uf_code`, `phone`, `celphone`, `mail`, `created_at`, `updated_at`) VALUES
-	(1, 'Erick Cordeiro de Arruda', 'Erick Cordeiro', '38015989000180', '512652655125', 'Rua 4, Casa', '120', 'Casa', 'AGROCHA 2', 'Registro', 'São Paulo', '11900000', '1338222302', '13996631713', 'erickcordeiroa@gmail.com', '2020-11-03 10:54:17', '2020-11-03 11:07:47');
-/*!40000 ALTER TABLE `branchs` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.clients
 CREATE TABLE IF NOT EXISTS `clients` (
@@ -70,10 +66,6 @@ CREATE TABLE IF NOT EXISTS `clients` (
 
 -- Copiando dados para a tabela consultorio.clients: ~0 rows (aproximadamente)
 DELETE FROM `clients`;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` (`id`, `company`, `fantasy`, `document`, `ie`, `street`, `number`, `city`, `neight`, `uf`, `complement`, `uf_code`, `phone`, `celphone`, `mail`, `password`, `created_at`, `updated_at`) VALUES
-	(2, 'ERICK CORDEIRO DE ARRUDA 42127555805', 'EWD MARKETING DIGITAL E DESENVOLVIMENTO WEB', '38015989000180', '512.652.655.125', '10 R QUATRO', '120', 'REGISTRO', 'AGROCHA 2', 'SP', 'CASA', '11900000', '13 96060090', '13 996631713', 'tiemitanno@hotmail.com', '$2y$10$WJyA6x3f76jE2.HDGB69EOp8XfPBwtRX7bxOw0xE/9ecoW0r4ZGxq', '2020-10-08 21:48:18', NULL);
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.collaborators
 CREATE TABLE IF NOT EXISTS `collaborators` (
@@ -101,12 +93,6 @@ CREATE TABLE IF NOT EXISTS `collaborators` (
 
 -- Copiando dados para a tabela consultorio.collaborators: ~3 rows (aproximadamente)
 DELETE FROM `collaborators`;
-/*!40000 ALTER TABLE `collaborators` DISABLE KEYS */;
-INSERT INTO `collaborators` (`id`, `clients_id`, `name`, `document`, `mail`, `office`, `phone`, `celphone`, `birth_date`, `address`, `complement`, `neight`, `city`, `uf`, `uf_code`, `password`, `forget`, `created_at`, `updated_at`) VALUES
-	(5, 2, 'Erick Cordeiro', '42127555805', 'tiemitanno@gmail.com', 'Gerente', '13 99663171', '13 996631713', '2020-11-29 16:35:12', 'Rua 4, Casa', 'Casa', 'AGROCHA 2', 'Registro', 'São Paulo', '11900000', '$2y$10$livMyS.bTTnAVCMi/4h3o.YSLBPmmTvh7NfEaM7hOF0HglBOMHoDa', NULL, '2020-11-18 08:17:25', '2020-11-29 16:35:12'),
-	(7, 2, 'Evelin Tanno', '42786627850', 'tiemitanno@hotmail.com', 'Gerente', '13 99663171', '13 996631713', '1993-06-17 00:00:00', 'Rua 4, Casa, Casa', 'Casa', 'AGROCHA 2', 'Registro', 'São Paulo', '11900000', '$2y$10$4D1sVqqVa4DFPOkEArANKODGtpWYBZ8mFme574Yfvzfacqaw2.KT6', NULL, '2020-11-24 15:30:58', NULL),
-	(8, 1, 'Erick Cordeiro Segundo Registro', '42127555805', 'erickcordeiroa@gmail.com', 'Analista de TI', '13 99663171', '13 996631713', '2020-11-29 16:42:55', 'Rua 4, Casa, Casa', 'Casa', 'AGROCHA 2', 'Registro', 'São Paulo', '11900000', '$2y$10$cCUHuYvwGd8d3jML2VUPMeHLKht7qZPGeqY8z4uYT8AoXN4ffnwum', NULL, '2020-11-29 16:34:50', '2020-11-29 16:42:55');
-/*!40000 ALTER TABLE `collaborators` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.complementary
 CREATE TABLE IF NOT EXISTS `complementary` (
@@ -141,10 +127,6 @@ CREATE TABLE IF NOT EXISTS `doctors` (
 
 -- Copiando dados para a tabela consultorio.doctors: ~0 rows (aproximadamente)
 DELETE FROM `doctors`;
-/*!40000 ALTER TABLE `doctors` DISABLE KEYS */;
-INSERT INTO `doctors` (`id`, `name`, `crm`, `street`, `number`, `neight`, `city`, `uf`, `uf_code`, `created_at`, `updated_at`) VALUES
-	(1, 'Erick Cordeiro Médico', '421575842', 'Rua 4', '120', 'AGROCHA 2', 'Registro', 'São Paulo', '11900-000', '2020-10-31 16:58:32', '2020-11-24 14:50:06');
-/*!40000 ALTER TABLE `doctors` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.exams
 CREATE TABLE IF NOT EXISTS `exams` (
@@ -159,10 +141,6 @@ CREATE TABLE IF NOT EXISTS `exams` (
 
 -- Copiando dados para a tabela consultorio.exams: ~0 rows (aproximadamente)
 DELETE FROM `exams`;
-/*!40000 ALTER TABLE `exams` DISABLE KEYS */;
-INSERT INTO `exams` (`id`, `id_doctors`, `id_branchs`, `description`, `created_at`, `updated_at`) VALUES
-	(2, 1, 1, 'Exame de Teste ', '2020-11-11 19:51:31', '2020-11-11 19:57:26');
-/*!40000 ALTER TABLE `exams` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.record
 CREATE TABLE IF NOT EXISTS `record` (
@@ -214,17 +192,6 @@ CREATE TABLE IF NOT EXISTS `schedulings` (
 
 -- Copiando dados para a tabela consultorio.schedulings: ~8 rows (aproximadamente)
 DELETE FROM `schedulings`;
-/*!40000 ALTER TABLE `schedulings` DISABLE KEYS */;
-INSERT INTO `schedulings` (`id`, `id_branchs`, `id_clients`, `id_collaborators`, `id_exams`, `complementary`, `start`, `end`, `status`, `observation`, `created_at`, `updated_at`) VALUES
-	(1, 1, 2, 5, 2, NULL, '2020-11-24 10:30:00', '2020-11-24 11:00:00', 'success', NULL, '2020-11-24 10:09:03', '2020-11-26 12:54:10'),
-	(2, 1, 2, 5, 2, NULL, '2020-11-25 10:40:00', '2020-11-25 11:00:00', 'success', NULL, '2020-11-24 10:41:29', '2020-11-26 12:54:13'),
-	(5, 1, 2, 6, 2, NULL, '2020-11-25 10:00:00', '2020-11-25 11:00:00', 'success', 'teste', '2020-11-24 10:54:36', '2020-11-26 12:54:16'),
-	(8, 1, 2, 5, 2, NULL, '2020-11-04 10:00:00', '2020-11-04 10:30:00', 'success', 'teste', '2020-11-24 14:23:59', '2020-11-26 12:54:19'),
-	(12, 1, 2, 5, 2, NULL, '2020-11-04 19:00:00', '2020-11-04 19:30:00', 'success', 'teste de cadastro', '2020-11-24 15:49:48', '2020-11-26 12:54:22'),
-	(13, 1, 2, 7, 2, NULL, '2020-11-26 10:00:00', '2020-11-26 11:00:00', 'occurrence', 'Novo Agendamento Com Status', '2020-11-26 09:51:29', '2020-11-26 13:23:46'),
-	(15, 1, 2, 7, 2, 'Exame Complementar de Teste', '2020-11-29 15:20:00', '2020-11-29 15:50:00', 'pending', 'Teste', '2020-11-29 14:22:27', NULL),
-	(16, 1, 2, 5, 2, 'Exame Complementar de Teste', '2020-11-30 20:30:00', '2020-11-30 21:00:00', 'pending', 'agendamento 2', '2020-11-29 14:33:58', NULL);
-/*!40000 ALTER TABLE `schedulings` ENABLE KEYS */;
 
 -- Copiando estrutura para tabela consultorio.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -240,10 +207,3 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Copiando dados para a tabela consultorio.users: ~0 rows (aproximadamente)
 DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `fullname`, `email`, `password`, `created_at`, `updated_at`) VALUES
-	(1, 'Erick Cordeiro', 'erickcordeiroa@gmail.com', '$2y$10$QEarlVC/Dq9g7JrpRpJDUOhIkMwQO3.8G0RxhEa8VMY.TJ4QgZeSS', '2020-06-28 18:39:35', NULL);
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
-
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
