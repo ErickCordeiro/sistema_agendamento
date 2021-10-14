@@ -5,28 +5,23 @@
 define("CONF_DB_HOST", "localhost");
 define("CONF_DB_USER", "root");
 define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "consultorio");
-
-// define("CONF_DB_HOST", "localhost");
-// define("CONF_DB_USER", "polime26_admin");
-// define("CONF_DB_PASS", "OhaI@Vb]N(aL");
-// define("CONF_DB_NAME", "polime26_agendamento");
+define("CONF_DB_NAME", "");
 
 /**
  * PROJECT URLs
  */
-define("CONF_URL_BASE", "http://agendamento.polimedsaude.com.br"); // alterar depois para o original que vai ser publicado
-define("CONF_URL_TEST", "https://www.localhost/poliseg");
+define("CONF_URL_BASE", ""); // alterar depois para o original que vai ser publicado
+define("CONF_URL_TEST", "https://www.localhost/agendamento");
 define("CONF_URL_ADMIN", "/admin");
 
 /**
  * SITE
  */
-define("CONF_SITE_NAME", "Polimed - Sistema de Agendamento Online");
-define("CONF_SITE_TITLE", "Polimed - Sistema de Agendamento Online");
-define("CONF_SITE_DESC", "Polimed - Sistema de Agendamento Online");
+define("CONF_SITE_NAME", "Colocar o nome da empresa");
+define("CONF_SITE_TITLE", "Colocar o título do site");
+define("CONF_SITE_DESC", "Colocar a descrição do site (até 156 palavras) SEO");
 define("CONF_SITE_LANG", "pt_BR");
-define("CONF_SITE_DOMAIN", "http://agendamento.polimedsaude.com.br");
+define("CONF_SITE_DOMAIN", "http://dominiodoseusistema.com");
 define("CONF_SITE_ADDR_STREET", "");
 define("CONF_SITE_ADDR_NUMBER", "");
 define("CONF_SITE_ADDR_COMPLEMENT", "");
@@ -37,14 +32,14 @@ define("CONF_SITE_ADDR_ZIPCODE", "");
 /**
  * SOCIAL
  */
-define("CONF_SOCIAL_TWITTER_CREATOR", "@erickcordeiroa");
-define("CONF_SOCIAL_TWITTER_PUBLISHER", "@erickcordeiroa");
-define("CONF_SOCIAL_FACEBOOK_APP", "1321853084649431");
-define("CONF_SOCIAL_FACEBOOK_PAGE", "erickcordeiroa");
-define("CONF_SOCIAL_FACEBOOK_AUTHOR", "erickcordeiroa");
-define("CONF_SOCIAL_INSTAGRAM_PAGE", "erickcordeioa");
-define("CONF_SOCIAL_GOOGLE_PAGE", "erickcordeiroa");
-define("CONF_SOCIAL_GOOGLE_AUTHOR", "erickcordeiroa");
+define("CONF_SOCIAL_TWITTER_CREATOR", "perfildocriador");
+define("CONF_SOCIAL_TWITTER_PUBLISHER", "perfildocriador");
+define("CONF_SOCIAL_FACEBOOK_APP", "perfildocriador");
+define("CONF_SOCIAL_FACEBOOK_PAGE", "perfildocriador");
+define("CONF_SOCIAL_FACEBOOK_AUTHOR", "perfildocriador");
+define("CONF_SOCIAL_INSTAGRAM_PAGE", "perfildocriador");
+define("CONF_SOCIAL_GOOGLE_PAGE", "perfildocriador");
+define("CONF_SOCIAL_GOOGLE_AUTHOR", "perfildocriador");
 
 /**
  * DATES
@@ -95,12 +90,12 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 /**
  * MAIL
  */
-define("CONF_MAIL_HOST", "agendamento.polimedsaude.com.br");
+define("CONF_MAIL_HOST", "host de e-mail contratado");
 define("CONF_MAIL_PORT", "25");
-define("CONF_MAIL_USER", "naoresponda@agendamento.polimedsaude.com.br");
-define("CONF_MAIL_PASS", "vGCS8Hdpsrp0");
-define("CONF_MAIL_SENDER", ["name" => CONF_SITE_NAME, "address" => "naoresponda@agendamento.polimedsaude.com.br"]);
-define("CONF_MAIL_SUPPORT", "contato@ewdmarketingdigital.com.br");
+define("CONF_MAIL_USER", "usuario do email");
+define("CONF_MAIL_PASS", "******");
+define("CONF_MAIL_SENDER", ["name" => CONF_SITE_NAME, "address" => "email@email.com.br"]);
+define("CONF_MAIL_SUPPORT", "email@email.com.br");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);
