@@ -1,0 +1,12 @@
+{
+    "apis": {
+        "limit": 1,
+        "requests": 1,
+        "time": 1606242555
+    },
+    "apiAuth": {
+        "limit": 3,
+        "requests": 1,
+        "time": 1606242614
+    }
+}
